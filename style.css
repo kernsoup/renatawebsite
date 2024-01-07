@@ -213,6 +213,11 @@ h3:hover {
     h1:before {
       content: "RA";
     }
+    #intro {
+        grid-template-rows: repeat(2, 1fr);
+        height: 1000px;
+        grid-template-columns: 1fr;
+    }
   }
   
   @media screen and (min-width: 1001px) {
