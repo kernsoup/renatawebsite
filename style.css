@@ -1,0 +1,222 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #EBD2D8;
+    color: #FFFAFA;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    height: 90px;
+    transition: 0.25s;
+} 
+
+main {
+    margin-top: 90px;
+}
+#home, #projects, #contact, #skills {
+    background-color: transparent;
+    height: 90px;
+    font-size: 20px;
+    border-width: 0px;
+    color: #C55B8C;
+    font-weight: 800;
+    transition: 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+#home {
+    grid-column: 8;
+}
+#home:hover, #projects:hover, #contact:hover, #skills:hover {
+    background-color: #E8CAD2;
+}
+h1 {
+    margin-left: 20px;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.buttons {
+    text-align: left;
+    
+} 
+@font-face {
+    font-family: nunitoFont;
+    src: url(Nunito-VariableFont_wght.ttf);
+}
+body {
+    background-color: #FFFAFA;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: nunitoFont;
+    animation-name: ani;
+    opacity: 100%;
+    animation-duration: 3s;
+}
+
+@keyframes ani {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+} 
+a {
+    color: #C55B8C;
+    text-decoration: none;
+}
+#intro {
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    height: 550px;
+    margin-right: 0px;
+}
+#intro-text {
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+#me {
+    text-align: center;
+   
+    img {
+        height: 550px;
+    }
+}
+
+#hello {
+    display: flex;
+    align-items: flex-end;
+    color: #C55B8C;
+    justify-content: center;
+    font-size: 50px;
+    grid-column: 2; 
+    grid-row: 2;
+}
+#description {
+    grid-column: 2; 
+    grid-row: 3;
+    font-size: 50px;
+    color: #083D77;
+}
+#skills-block {
+    background-color: #ABC798;
+}
+#projects-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+thead, #projects-header {
+    text-align: center;
+    font-size: 40px;   
+}
+#projects-header {
+    margin-bottom: 50px;
+}
+td {
+    padding: 10px;
+    font-size: 25px;
+}
+
+h3 {
+    background-color: #E8CAD2;
+    margin: 0px;
+}
+p {
+    margin-top: 0px;
+}
+.project-pic {
+    img {
+        width: 100%;
+    }
+}
+
+#contact-block {
+    background-color: #083D77;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#contact-text {
+    color: white;
+    background-color: #083D77;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    background-color: #FFFAFA;
+    font-size: 35px;
+}
+h3:hover {
+    text-decoration: underline;
+    text-decoration-color: #C55B8C;
+}
+#social {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#social-text {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+#social-text:hover {
+    text-decoration: underline;
+}
+.project-text, #about {
+    font-size: 23px;
+    text-align: justify;
+}
+
+#about {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 01px;
+    background-color: #EBD2D8;
+    padding-left: 7%;
+    padding-right: 7%;
+    p {
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        content: "RA";
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h1:before {
+      content: "RA";
+    }
+  }
+  
+  @media screen and (min-width: 1001px) {
+    h1:before {
+      content: "Renata Averianova";
+    }
+  }
