@@ -214,8 +214,8 @@ h3:hover {
     }
     #intro {
         grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 2fr;
         height: 1000px;
-        grid-template-columns: 1fr;
     }
   }
   
