@@ -217,6 +217,14 @@ h3:hover {
         grid-template-columns: 2fr;
         height: 1000px;
     }
+
+    #me {
+        text-align: center;
+       
+        img {
+            height: 45%;
+        }
+    }
   }
   
   @media screen and (min-width: 1001px) {
